@@ -1,6 +1,4 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Voila"
+---
+- name: Install Java 1.7
+hosts: all
+  yum: name=java-1.7.0-openjdk state=present
